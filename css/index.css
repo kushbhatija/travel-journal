@@ -13,6 +13,9 @@
     z-index: 999;
 }
 
+h1{
+    margin-top: 0.5em;
+}
 
 .gallery{
     padding-top: 10em;
@@ -46,13 +49,19 @@ a{
     color: blue;
 }
 
-.overlay{
-    background-color: blue;
-    overflow:hidden;
-    width: 100%;
-    transition: .5s ease;
+
+
+@media screen and (max-width:550px){
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
 }
 
-@media screen and (max-width600){
-
+@media screen and (max-width:300px){
+    h1{
+        padding: 0;
+        font-size: 0.8em;
+    }
 }
